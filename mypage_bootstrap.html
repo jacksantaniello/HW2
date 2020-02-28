@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <style>
+        /* img {
+            border-radius: 80%;
+        } */
+      </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="./manage-cards.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="home.html">
+          <img class="rounded-circle" src="img/cu_boulder_logo.jpg" alt="" width="30" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="mypage_bootstrap.html">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup-modal/login.html">Sign Up Modal <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tic-tac-toe/tic-tac-toe.html">Tic Tac Toe game</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <br>
+    <div class="container">
+        <h1>
+            Santaniello, Ciro "Jack" -
+            <small class="text-muted">Software Development Methods and Tools</small>
+        </h1>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card bg-light text-dark">
+            <div class="card-body">
+                I am an economics major at the University of Colorado Boulder. When I'm not doing homework I am taking pictures with my digital and film cameras.
+                I also like to play music on the side. I am studying computer science because our society is ever changing and with my economics degreee seems a 
+                minor in computer science gives me a competitive edge on getting an analyst job.
+            </div>
+        </div>
+        <br>
+        <h2>My Professional Profile</h2>
+        <br>
+        <a href="https://github.com/jacksantaniello" class="btn btn-outline-secondary" role="button">Jack's Github</a>
+
+        <br>
+        <img src="img/JackProfile.JPEG" class="img-circle" alt="An image of Jack Santanielo" width="500" height="570">
+    </div>
+    <div class="container">
+        <br>
+        <h3>My Favorite Projects</h3>
+
+        <table class="table table-bordered">
+            <tr>
+                <th>#</th>
+                <th>Name of the Project</th>
+                <th>Technologies Used</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>The Binky Man</td>
+                <td>C++</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>"Crutches"</td>
+                <td>Photoshop, printers</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>This website:)</td>
+                <td>HTML</td>
+            </tr>
+        </table>
+        <br>
+
+        <h3>Interests</h3> 
+        <div class="text-center">
+            <a href="form.html" class="btn btn-info" role="button">Add interest</a>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="card-group">
+            <div class="card" id="interest1">
+                <img class="card-img-top" src="img/Unknown.png" alt="Card image cap" width="200" height="200">
+                <div class="card-body">
+                    <button class="btn btn-primary" onclick="addCard('interest1')">+</button>
+                </div>
+            </div>
+            <div class="card" id="interest2">
+                <img class="card-img-top" src="img/Unknown2.jpg" alt="Card image cap" width="200" height="200">
+                <div class="card-body">
+                    <button class="btn btn-primary" onclick="addCard('interest2')">+</button>
+                </div>
+            </div>
+            <div class="card" id="interest3">
+                <img class="card-img-top" src="img/Coding-body-image-.jpg" alt="Card image cap" width="200" height="200">
+                <div class="card-body">
+                    <button class="btn btn-primary" onclick="addCard('interest3')">+</button>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+  </body>
+</html>
